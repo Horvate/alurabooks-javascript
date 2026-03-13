@@ -1,21 +1,9 @@
-let livros = [];
-const endepointDaAPI = 'https://guilhermeonrails.github.io/casadocodigo/livros.json';
-getBuscasLivrosDaAPI();
-
 const elementosParaInserirLivros = document.getElementById("livros");
-
-
-async function getBuscasLivrosDaAPI() {
-    const res = await fetch(endepointDaAPI);
-    livros = await res.json();
-    console.table(livros);
-    exibirLivrosNaTela(livros);
-}
 
 function exibirLivrosNaTela(listaDeLivros) {
     listaDeLivros.forEach(livro => {
-        elementosParaInserirLivros.innerHTML += 
-        `<div class="livro">
+        elementosParaInserirLivros.innerHTML +=
+            `<div class="livro">
       <img class="livro__imagens" src="${livro.imagem}" alt="${livro.alt}"/>
       <h2 class="livro__titulo">
         ${livro.titulo}

@@ -1,25 +1,37 @@
 # 📚 AluraBooks
 
-Projeto desenvolvido durante um curso da Alura com o objetivo de praticar **JavaScript e manipulação do DOM**.
+Projeto desenvolvido durante um curso da Alura com o objetivo de praticar JavaScript, manipulação do DOM e consumo de API.
 
 🚧 **Projeto em desenvolvimento**
 
 ## 📖 Sobre o projeto
 
-O projeto simula uma loja de livros da Alura onde é possível:
+O projeto simula uma loja de livros da Alura, onde é possível visualizar e interagir com uma lista de livros carregada dinamicamente através de uma API.
 
-- filtrar livros por categoria
-- visualizar livros disponíveis
-- ordenar livros por preço
-- calcular o valor total dos livros disponíveis
+O HTML e CSS foram disponibilizados pelo curso, enquanto toda a lógica em JavaScript foi desenvolvida durante o projeto.
 
-O **HTML e CSS foram disponibilizados pelo curso**, enquanto toda a **lógica em JavaScript será implementada durante o desenvolvimento do projeto**.
+## 🚀 Funcionalidades
+
+- 📚 Consumo de API para listagem de livros
+- 🖥️ Renderização dinâmica dos livros na tela
+- 💰 Aplicação de desconto nos preços
+- 🔎 Sistema de filtragem de livros por categoria
+
+## 🖼️ Preview do projeto
+
+📸 Preview do projeto será adicionado em breve.
 
 ## 🛠 Tecnologias utilizadas
 
-- HTML
-- CSS
-- JavaScript
+- HTML5
+
+- CSS3
+
+- JavaScript (ES6+)
+
+- Fetch API
+
+- Manipulação do DOM
 
 ## 📈 Melhorias futuras
 
@@ -29,6 +41,20 @@ O **HTML e CSS foram disponibilizados pelo curso**, enquanto toda a **lógica em
 - Integrar com uma API real de livros
 - Adicionar testes automatizados
 - Implementar renderização dinâmica dos livros via JavaScript
+
+## 📚 Aprendizados
+
+Durante o desenvolvimento deste projeto foram praticados:
+
+Consumo de API utilizando Fetch
+
+Manipulação do DOM com JavaScript
+
+Uso de métodos de array como map(), filter() e sort()
+
+Organização de código em funções reutilizáveis
+
+Boas práticas de desenvolvimento front-end
 
 ## 👨‍💻 Autor
 
