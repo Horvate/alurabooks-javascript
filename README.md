@@ -2,7 +2,6 @@
 
 Projeto desenvolvido durante um curso da Alura com o objetivo de praticar JavaScript, manipulação do DOM e consumo de API.
 
-🚧 **Projeto em desenvolvimento**
 
 ## 📖 Sobre o projeto
 
@@ -19,7 +18,18 @@ O HTML e CSS foram disponibilizados pelo curso, enquanto toda a lógica em JavaS
 
 ## 🖼️ Preview do projeto
 
-📸 Preview do projeto será adicionado em breve.
+## 🚀 Preview
+
+![Preview do Projeto](./imagens/preview.png)
+
+## 🚀 Deploy
+
+Acesse o projeto online:
+
+https://alurabooks-javascript-beta.vercel.app/
+
+🚧 Projeto em desenvolvimento. Algumas funcionalidades ainda estão sendo implementadas.
+
 
 ## 🛠 Tecnologias utilizadas
 
