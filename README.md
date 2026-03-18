@@ -16,7 +16,6 @@ O HTML e CSS foram disponibilizados pelo curso, enquanto toda a lógica em JavaS
 - 💰 Aplicação de desconto nos preços
 - 🔎 Sistema de filtragem de livros por categoria
 
-## 🖼️ Preview do projeto
 
 ## 🚀 Preview
 
@@ -69,3 +68,8 @@ Boas práticas de desenvolvimento front-end
 ## 👨‍💻 Autor
 
 Desenvolvido por **Eduardo Sousa Horvate**
+
+## 📫 Contato
+
+- LinkedIn: https://www.linkedin.com/in/eduardo-horvate/?skipRedirect=true
+- GitHub: https://github.com/Horvate
