@@ -3,7 +3,7 @@ botoes.forEach(btn => btn.addEventListener("click", handleFilterClick));
 
 function handleFilterClick() {
     const selectedCategory = this.value;
-    const filteredBooks = filterBooksByCategory(selectedCategory, livros);
+    const filteredBooks = filterBooksByCategory(selectedCategory, books);
     exibirLivrosNaTela(filteredBooks);
     handleAvailableBooks(selectedCategory, filteredBooks);
 }
@@ -23,8 +23,12 @@ const handleAvailableBooks = (selectedCategory, livrosFiltrados) => {
     }
 }
 
-const filterBooksByCategory = (selectedCategory, livros) => {
+const filterBooksByCategory = (selectedCategory, books) => {
     return selectedCategory === "disponivel"
-        ? livros.filter(livro => livro.quantidade > 0)
-        : livros.filter(livro => livro.categoria === selectedCategory);
+        ? books.filter(livro => livro.quantidade > 0)
+        : books.filter(livro => livro.categoria === selectedCategory);
 }
+
+// Obs: Refatiorada. 
+// obs: Alterado filteredBooks livros para books.
+// obs: Alterado parâmetro da função livros para books.
