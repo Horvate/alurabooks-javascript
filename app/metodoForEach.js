@@ -20,7 +20,3 @@ function exibirLivrosNaTela(listaDeLivros) {
     </div>`;
   });
 }
-
-
-
-// Função: exibirLivrosNaTela chamada nas pastas mais.js, metodoShort.js e metodoFilter.js.

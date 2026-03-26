@@ -1,11 +1,8 @@
-const btmOrdenarPorPreo = document.getElementById("btnOrdenarPorPreco");
+const sortByPriceButton = document.getElementById("btnOrdenarPorPreco");
 
-btmOrdenarPorPreo.addEventListener('click', ordenarLivrosPorPrco);
+sortByPriceButton.addEventListener('click', sortBooksByPrice);
 
-function ordenarLivrosPorPrco() {
-    let ordenarLivros = books.sort((a, b) => a.preco - b.preco);
-    exibirLivrosNaTela(ordenarLivros);
+function sortBooksByPrice() {
+    let sortedBooks = books.sort((a, b) => a.preco - b.preco);
+    exibirLivrosNaTela(sortedBooks);
 }
-
-
-// obs: Alterado ordenarLivros de livros para books.

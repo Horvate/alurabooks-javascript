@@ -3,7 +3,6 @@ const apiEndpoint = 'https://guilhermeonrails.github.io/casadocodigo/livros.json
 fetchBooksFromAPI();
 init();
 
-
 async function fetchBooksFromAPI() {
     const response = await fetch(apiEndpoint);
     if (!response.ok) {
@@ -21,7 +20,3 @@ async function init() {
         console.error(error);
     }
 }
-
-// função: aplicarDesconto pasta metodoMap.js
-// Função: exibirLivrosNaTela pasta metodoForEach.js
-// Obs: Em processo de refatoramento.

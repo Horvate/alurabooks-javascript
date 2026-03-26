@@ -8,7 +8,7 @@ function handleFilterClick() {
     handleAvailableBooks(selectedCategory, filteredBooks);
 }
 
-function exibirValorTotalDosLivrosNaTela(totalValue) {
+function displayTotalPrice(totalValue) {
     elementoComValorTotalDeLivrosDisponiveis.innerHTML = `
    <div class="livros__disponiveis">
       <p>Todos os livros disponíveis por R$ <span id="valor">${totalValue}</span></p>
@@ -18,8 +18,8 @@ function exibirValorTotalDosLivrosNaTela(totalValue) {
 
 const handleAvailableBooks = (selectedCategory, livrosFiltrados) => {
     if (selectedCategory === "disponivel") {
-        const totalValue = calcularValorTotalDeLivrosFiltrados(livrosFiltrados);
-        exibirValorTotalDosLivrosNaTela(totalValue);
+        const totalValue = calculateTotalPrice(livrosFiltrados);
+        displayTotalPrice(totalValue);
     }
 }
 
@@ -28,7 +28,3 @@ const filterBooksByCategory = (selectedCategory, books) => {
         ? books.filter(livro => livro.quantidade > 0)
         : books.filter(livro => livro.categoria === selectedCategory);
 }
-
-// Obs: Refatiorada. 
-// obs: Alterado filteredBooks livros para books.
-// obs: Alterado parâmetro da função livros para books.
