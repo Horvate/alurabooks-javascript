@@ -4,12 +4,12 @@ botoes.forEach(btn => btn.addEventListener("click", handleFilterClick));
 function handleFilterClick() {
     const selectedCategory = this.value;
     const filteredBooks = filterBooksByCategory(selectedCategory, books);
-    exibirLivrosNaTela(filteredBooks);
+    displayBooks(filteredBooks);
     handleAvailableBooks(selectedCategory, filteredBooks);
 }
 
 function displayTotalPrice(totalValue) {
-    elementoComValorTotalDeLivrosDisponiveis.innerHTML = `
+    totalAvailableBooksElement.innerHTML = `
    <div class="livros__disponiveis">
       <p>Todos os livros disponíveis por R$ <span id="valor">${totalValue}</span></p>
     </div>

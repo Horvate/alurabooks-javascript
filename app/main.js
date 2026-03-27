@@ -15,7 +15,7 @@ async function init() {
     try {
         books = await fetchBooksFromAPI();
         const booksWithDiscount = applyDiscount(books);
-        exibirLivrosNaTela(booksWithDiscount);
+        displayBooks(booksWithDiscount);
     }catch (error) {
         console.error(error);
     }
