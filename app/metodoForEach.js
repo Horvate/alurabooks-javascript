@@ -13,18 +13,18 @@ function clearScreen() {
 }
 
 function createBookTemplate(livro) {
-  const availabilityClass = livro.quantidade > 0
+  const availabilityClass = livro.avaliable > 0
     ? "livro__imagens"
     : "livros__imagens indisponivel";
   return `<div class="livro">
-      <img class="${availabilityClass}" src="${livro.imagem}" alt="${livro.alt}"/>
+      <img class="${availabilityClass}" src="${livro.image}" alt="${livro.alt}"/>
       <h2 class="livro__titulo">
-        ${livro.titulo}
+        ${livro.title}
       </h2>
-      <p class="livro__descricao">${livro.autor}</p>
-      <p class="livro__preco" id="preco">R$${livro.preco.toFixed(2)}</p>
+      <p class="livro__descricao">${livro.author}</p>
+      <p class="livro__preco" id="preco">R$${livro.price.toFixed(2)}</p>
       <div class="tags">
-        <span class="tag">${livro.categoria}</span>
+        <span class="tag">${livro.category}</span>
      </div>
     </div>`
 }

@@ -16,15 +16,15 @@ function displayTotalPrice(totalValue) {
   `;
 }
 
-const handleAvailableBooks = (selectedCategory, livrosFiltrados) => {
+const handleAvailableBooks = (selectedCategory, filterBooks) => {
     if (selectedCategory === "disponivel") {
-        const totalValue = calculateTotalPrice(livrosFiltrados);
+        const totalValue = calculateTotalPrice(filterBooks);
         displayTotalPrice(totalValue);
     }
 }
 
 const filterBooksByCategory = (selectedCategory, books) => {
     return selectedCategory === "disponivel"
-        ? books.filter(livro => livro.quantidade > 0)
-        : books.filter(livro => livro.categoria === selectedCategory);
+        ? books.filter(livro => livro.avaliable > 0)
+        : books.filter(livro => livro.category === selectedCategory);
 }

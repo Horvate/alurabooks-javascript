@@ -13,10 +13,23 @@ async function fetchBooksFromAPI() {
 
 async function init() {
     try {
-        books = await fetchBooksFromAPI();
+        const data = await fetchBooksFromAPI();
+        //books = await fetchBooksFromAPI();
+        books = data.map(mapBooks);
         const booksWithDiscount = applyDiscount(books);
         displayBooks(booksWithDiscount);
     }catch (error) {
         console.error(error);
     }
+}
+
+function mapBooks(book) {
+    return {
+        title: book.titulo,
+        price: book.preco,
+        category: book.categoria,
+        image: book.imagem,
+        avaliable: book.quantidade > 0,
+        author: book.autor,
+    };
 }
