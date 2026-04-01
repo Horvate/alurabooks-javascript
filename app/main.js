@@ -1,4 +1,8 @@
-let books = [];
+import { displayBooks } from "../app/metodoForEach.js";
+import { applyDiscount } from "../app/metodoMap.js";
+
+export let books = [];
+
 const apiEndpoint = 'https://guilhermeonrails.github.io/casadocodigo/livros.json';
 fetchBooksFromAPI();
 init();
@@ -14,7 +18,6 @@ async function fetchBooksFromAPI() {
 async function init() {
     try {
         const data = await fetchBooksFromAPI();
-        //books = await fetchBooksFromAPI();
         books = data.map(mapBooks);
         const booksWithDiscount = applyDiscount(books);
         displayBooks(booksWithDiscount);

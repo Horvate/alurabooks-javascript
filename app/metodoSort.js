@@ -1,4 +1,6 @@
-const sortByPriceButton = document.getElementById("btnOrdenarPorPreco");
+import { displayBooks } from "../app/metodoForEach.js";
+import { sortByPriceButton } from "../app/element.js";
+import { books } from "../app/main.js";
 
 sortByPriceButton.addEventListener('click', sortBooksByPrice);
 

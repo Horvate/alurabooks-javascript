@@ -1,5 +1,9 @@
-const botoes = document.querySelectorAll('.btn');
-botoes.forEach(btn => btn.addEventListener("click", handleFilterClick));
+import { buttons, totalAvailableBooksElement } from "../app/element.js";
+import { calculateTotalPrice } from "./metodoreduce.js";
+import { displayBooks } from "../app/metodoForEach.js";
+import { books } from "./main.js";
+
+buttons.forEach(btn => btn.addEventListener("click", handleFilterClick));
 
 function handleFilterClick() {
     const selectedCategory = this.value;

@@ -1,7 +1,6 @@
-const bookListContainer = document.getElementById("livros");
-const totalAvailableBooksElement = document.getElementById("valor_total_livros_disponiveis");
+import { bookListContainer, totalAvailableBooksElement } from "../app/element.js";
 
-function displayBooks(livro) {
+export function displayBooks(livro) {
   clearScreen();
   const booksHTML = livro.map(createBookTemplate).join("");
   bookListContainer.innerHTML = booksHTML;
@@ -14,8 +13,8 @@ function clearScreen() {
 
 function createBookTemplate(livro) {
   const availabilityClass = livro.avaliable > 0
-    ? "livro__imagens"
-    : "livros__imagens indisponivel";
+    ? "livro__imagem"
+    : "livro__imagem indisponivel";
   return `<div class="livro">
       <img class="${availabilityClass}" src="${livro.image}" alt="${livro.alt}"/>
       <h2 class="livro__titulo">

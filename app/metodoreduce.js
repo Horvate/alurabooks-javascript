@@ -1,3 +1,3 @@
-function calculateTotalPrice(livros) {
-    return livros.reduce((acc, livro) => acc + livro.preco, 0).toFixed(2);
+export function calculateTotalPrice(books) {
+    return books.reduce((acc, book) => acc + book.price, 0).toFixed(2);
 }
