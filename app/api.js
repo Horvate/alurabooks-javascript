@@ -1,5 +1,5 @@
-import { displayBooks } from "../app/metodoForEach.js";
-import { applyDiscount } from "../app/metodoMap.js";
+import { displayBooks } from "./metodoForEach.js";
+import { applyDiscount } from "./metodoMap.js";
 
 export let books = [];
 

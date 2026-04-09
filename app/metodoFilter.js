@@ -1,7 +1,7 @@
 import { buttons, totalAvailableBooksElement } from "../app/element.js";
 import { calculateTotalPrice } from "./metodoreduce.js";
 import { displayBooks } from "../app/metodoForEach.js";
-import { books } from "./main.js";
+import { books } from "../app/api.js";
 
 buttons.forEach(btn => btn.addEventListener("click", handleFilterClick));
 
