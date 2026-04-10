@@ -1,11 +1,9 @@
-import { buttons, totalAvailableBooksElement } from "../app/element.js";
+import { totalAvailableBooksElement } from "../app/element.js";
 import { calculateTotalPrice } from "./metodoreduce.js";
 import { displayBooks } from "../app/metodoForEach.js";
-import { books } from "../app/api.js";
+import { books } from "../app/state.js";
 
-buttons.forEach(btn => btn.addEventListener("click", handleFilterClick));
-
-function handleFilterClick() {
+export function handleFilterClick() {
     const selectedCategory = this.value;
     const filteredBooks = filterBooksByCategory(selectedCategory, books);
     displayBooks(filteredBooks);
