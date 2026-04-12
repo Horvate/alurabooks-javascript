@@ -1,5 +1,5 @@
 import { totalAvailableBooksElement } from "../app/element.js";
-import { calculateTotalPrice } from "./metodoreduce.js";
+import { calculateTotalPrice } from "../app/services/books.js";
 import { displayBooks } from "../app/metodoForEach.js";
 import { books } from "../app/state.js";
 

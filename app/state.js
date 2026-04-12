@@ -1,6 +1,6 @@
 import { displayBooks } from "../app/metodoForEach.js";
-import { applyDiscount } from "../app/metodoMap.js";
-import { fetchBooksFromAPI } from "../app/service/api.js";
+import { applyDiscount } from "../app/services/books.js";
+import { fetchBooksFromAPI } from "../app/api/booksApi.js";
 
 export let books = [];
 
