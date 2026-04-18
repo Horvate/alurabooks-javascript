@@ -1,5 +1,5 @@
-import { displayBooks } from "../app/metodoForEach.js";
-import { applyDiscount } from "../app/services/books.js";
+import { displayBooks } from "../app/ui/displayBooks.js";
+import { applyDiscount } from "./services/booksService.js";
 import { fetchBooksFromAPI } from "../app/api/booksApi.js";
 
 export let books = [];
