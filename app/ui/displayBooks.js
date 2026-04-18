@@ -1,4 +1,4 @@
-import { totalAvailableBooksElement, bookListContainer } from "../element.js";
+import { totalAvailableBooksElement, bookListContainer } from "../dom/element.js";
 
 export function displayTotalPrice(totalValue) {
     totalAvailableBooksElement.innerHTML = `

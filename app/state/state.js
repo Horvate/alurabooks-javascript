@@ -1,6 +1,6 @@
-import { displayBooks } from "../app/ui/displayBooks.js";
-import { applyDiscount } from "./services/booksService.js";
-import { fetchBooksFromAPI } from "../app/api/booksApi.js";
+import { displayBooks } from "../ui/displayBooks.js";
+import { applyDiscount } from "../services/booksService.js";
+import { fetchBooksFromAPI } from "../api/booksApi.js";
 
 export let books = [];
 

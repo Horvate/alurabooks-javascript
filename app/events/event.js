@@ -1,8 +1,8 @@
-import { buttons, sortByPriceButton } from "../element.js";
+import { buttons, sortByPriceButton } from "../dom/element.js";
 import { sortBooksByPrice } from "../services/booksService.js";
 import { handleFilterClick } from "../controllers/filterController.js";
 import { displayBooks } from "../ui/displayBooks.js";
-import { books } from "../state.js";
+import { books } from "../state/state.js";
 
 export function registerEvents() {
 

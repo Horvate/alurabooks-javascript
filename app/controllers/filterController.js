@@ -1,6 +1,6 @@
 import { filterBooksByCategory, handleAvailableBooks } from "../services/booksService.js";
 import { displayBooks } from "../ui/displayBooks.js";
-import { books } from "../state.js";
+import { books } from "../state/state.js";
 
 
 export function handleFilterClick() {
