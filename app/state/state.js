@@ -1,10 +1,10 @@
 import { displayBooks } from "../ui/displayBooks.js";
 import { applyDiscount } from "../services/booksService.js";
 import { fetchBooksFromAPI } from "../api/booksApi.js";
+import { mapBooks } from "../adapters/adapter.js";
 
 export let books = [];
 
-fetchBooksFromAPI();
 init();
 
 async function init() {
@@ -16,15 +16,4 @@ async function init() {
     }catch (error) {
         console.error(error);
     }
-}
-
-function mapBooks(book) {
-    return {
-        title: book.titulo,
-        price: book.preco,
-        category: book.categoria,
-        image: book.imagem,
-        avaliable: book.quantidade > 0,
-        author: book.autor,
-    };
 }

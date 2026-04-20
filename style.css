@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap');
 
 :root {
-  --bg-color: #ffffff;
+  --bg-color: #cccccc;
   --button-color: #326589;
   --text-title-color: #fc6621;
   --text-description-color: #fc6621;
@@ -12,6 +12,7 @@
 
 body {
   font-family: 'Poppins';
+  background-color: var(--bg-color);
 }
 
 .wrap {
@@ -128,7 +129,6 @@ body {
   background-color: var(--text-description-color);
   margin-top: 1rem;
   text-align: center;
-
   display: flex;
   justify-content: center;
   align-items: center;

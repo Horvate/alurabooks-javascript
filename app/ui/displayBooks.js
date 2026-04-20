@@ -1,17 +1,17 @@
 import { totalAvailableBooksElement, bookListContainer } from "../dom/element.js";
 
 export function displayTotalPrice(totalValue) {
-    totalAvailableBooksElement.innerHTML = `
+  totalAvailableBooksElement.innerHTML = `
    <div class="livros__disponiveis">
       <p>Todos os livros disponíveis por R$ <span id="valor">${totalValue}</span></p>
     </div>
   `;
 }
 
- function createBookTemplate(livro) {
+function createBookTemplate(livro) {
   const availabilityClass = livro.avaliable > 0
     ? "livro__imagem"
-  : "livro__imagem indisponivel";
+    : "livro__imagem indisponivel";
   return `<div class="livro">
       <img class="${availabilityClass}" src="${livro.image}" alt="${livro.alt}"/>
       <h2 class="livro__titulo">
@@ -24,14 +24,22 @@ export function displayTotalPrice(totalValue) {
     </div>
     </div>`
 }
- 
-function clearScreen() {
-  totalAvailableBooksElement.innerHTML = "";
-  bookListContainer.innerHTML = "";
+
+function clearBooksView() {
+  clearTotal();
+  clearbooksList();
+}
+
+function clearTotal() {
+  totalAvailableBooksElement.textContent = "";
+}
+
+function clearbooksList() {
+  bookListContainer.textContent = "";
 }
 
 export function displayBooks(book) {
-  clearScreen();
+  clearBooksView();
   const booksHTML = book.map(createBookTemplate).join("");
   bookListContainer.innerHTML = booksHTML;
 }
