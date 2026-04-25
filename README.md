@@ -19,7 +19,7 @@ O HTML e CSS foram disponibilizados pelo curso, enquanto toda a lógica em JavaS
 
 ## 🚀 Preview
 
-![Preview do Projeto](./imagens/preview.png)
+![Preview do Projeto](./imagens/alura-books-0.gif)
 
 ## 🚀 Deploy
 
